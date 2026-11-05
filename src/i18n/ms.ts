@@ -24,6 +24,8 @@ export const ms: TranslationSchema = {
   },
   nav: {
     // TODO: native review
+    brandName: 'Cikgu Nut',
+    // TODO: native review
     about: 'Tentang',
     // TODO: native review
     experience: 'Pengalaman',
@@ -46,11 +48,11 @@ export const ms: TranslationSchema = {
   },
   hero: {
     // TODO: native review
-    greeting: 'Salam sejahtera, saya',
+    greeting: 'Salam sejahtera, saya Cikgu Nut',
     // TODO: native review
     name: 'Nasrullah Lucien',
     // TODO: native review
-    title: 'Pendidik Sains & Pembangun EdTech',
+    title: 'Pendidik Sains, Bumi & Angkasa, dan Fizik',
     // TODO: native review
     summary: 'Guru sains yang mengkhusus dalam Fizik, Sains Bumi & Angkasa, dan Projek Sains, serta giat membangunkan media pengajaran interaktif dan makmal maya (Virtual Labs) untuk memperkukuh kefahaman sains.',
     // TODO: native review

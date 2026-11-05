@@ -13,6 +13,7 @@ export const en: TranslationSchema = {
     downloadFile: 'Download file',
   },
   nav: {
+    brandName: 'Kru Nut',
     about: 'About',
     experience: 'Experience',
     education: 'Education',
@@ -25,9 +26,9 @@ export const en: TranslationSchema = {
     menuToggleLabel: 'Toggle navigation menu',
   },
   hero: {
-    greeting: "Hello, I'm",
+    greeting: "Hello, I'm Kru Nut",
     name: 'Nasrullah Lucien',
-    title: 'Science Educator & EdTech Developer',
+    title: 'Science, Earth & Space, and Physics Educator',
     summary: 'Secondary science teacher specializing in Physics, Earth & Space Science, and Science Projects, actively developing interactive teaching media and virtual lab tools to enhance conceptual understanding.',
     exploreLabs: 'Explore Interactive Labs',
     downloadCv: 'Download CV',

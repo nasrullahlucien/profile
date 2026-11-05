@@ -11,7 +11,7 @@ export function renderFooterSection(): string {
           
           <div class="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
             <span class="font-bold text-slate-900">
-              ${t.hero.name}
+              ${t.nav.brandName} (${t.hero.name})
             </span>
             <span class="hidden sm:inline text-slate-300">•</span>
             <span>

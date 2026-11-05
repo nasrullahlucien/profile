@@ -13,6 +13,7 @@ export interface TranslationSchema {
     downloadFile: string;
   };
   nav: {
+    brandName: string;
     about: string;
     experience: string;
     education: string;

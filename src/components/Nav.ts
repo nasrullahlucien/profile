@@ -37,7 +37,7 @@ export function renderNav(): string {
             </span>
             <div class="flex flex-col">
               <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-teal-800 transition-colors">
-                ${t.hero.name}
+                ${t.nav.brandName}
               </span>
               <span class="text-[11px] font-medium text-slate-600 hidden sm:inline-block leading-tight">
                 Science Educator &amp; EdTech

@@ -29,7 +29,7 @@ function renderApp() {
   }
 
   // Reactive document title
-  document.title = `${t.hero.name} | ${t.hero.title}`;
+  document.title = `${t.nav.brandName} (${t.hero.name}) | ${t.hero.title}`;
 
   // Cleanup existing nav listener instances before re-render
   if (cleanupNavEvents) {
