@@ -35,24 +35,24 @@ export const en: TranslationSchema = {
     profilePhotoAlt: 'Profile photograph of Nasrullah Lucien',
     fastFacts: {
       role: {
-        label: 'ROLE & TEACHING',
-        value: 'Science & Physics Educator',
-        sub: 'Islamic Bacho Witthaya (2023–Present)',
+        label: 'ROLE',
+        value: 'Science, Earth & Space, and Physics Educator',
+      },
+      org: {
+        label: 'ORG',
+        value: 'Islamic Bacho Witthaya School (2023 – Present)',
       },
       education: {
-        label: 'GRADUATE STUDIES',
-        value: "M.Ed. in Science Teaching",
-        sub: 'Yala Rajabhat University (In Progress)',
+        label: 'STUDIES',
+        value: 'M.Ed. in Science, Math & Computer Teaching, Yala Rajabhat University',
       },
       honors: {
-        label: 'ACADEMIC HONORS',
-        value: 'First-Class Honors',
-        sub: 'B.Ed. Science Teaching, Fatoni Univ.',
+        label: 'HONORS',
+        value: 'First-Class Honors in Science Teaching, Fatoni University',
       },
       focus: {
-        label: 'CORE FOCUS & EDTECH',
-        value: 'Virtual Labs & Simulations',
-        sub: 'Physics • Astronomy • Robotics & Coding',
+        label: 'FOCUS',
+        value: 'Interactive Virtual Labs / Physics & Earth Space / Robotics & Coding',
       },
     },
   },

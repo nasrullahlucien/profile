@@ -34,10 +34,11 @@ export interface TranslationSchema {
     downloadCv: string;
     profilePhotoAlt: string;
     fastFacts: {
-      role: { label: string; value: string; sub: string };
-      education: { label: string; value: string; sub: string };
-      honors: { label: string; value: string; sub: string };
-      focus: { label: string; value: string; sub: string };
+      role: { label: string; value: string };
+      org: { label: string; value: string };
+      education: { label: string; value: string };
+      honors: { label: string; value: string };
+      focus: { label: string; value: string };
     };
   };
   about: {
