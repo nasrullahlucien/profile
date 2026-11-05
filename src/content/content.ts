@@ -5,7 +5,7 @@ export const siteContent: SiteContent = {
   author: {
     namePlaceholder: '[YOUR NAME]',
     emailPlaceholder: '[YOUR EMAIL]',
-    profilePhotoPath: withBase('images/profile-placeholder.svg'),
+    profilePhotoPath: withBase('images/image-profile.png'),
     cvPath: withBase('files/cv.pdf'),
   },
   socials: [
