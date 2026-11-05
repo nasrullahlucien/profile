@@ -92,14 +92,14 @@ export function renderHeroSection(): string {
               <div class="absolute -inset-2 bg-gradient-to-tr from-teal-500/20 via-slate-200/40 to-teal-100/30 rounded-3xl blur-xl" aria-hidden="true"></div>
 
               <div class="relative bg-white rounded-3xl p-3 sm:p-4 border border-slate-200/90 shadow-lg">
-                <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50 flex items-center justify-center border border-slate-100">
+                <div class="aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-50 flex items-center justify-center border border-slate-100">
                   <img 
                     src="${siteContent.author.profilePhotoPath}" 
                     alt="${t.hero.profilePhotoAlt}" 
-                    class="w-full h-full object-cover select-none"
+                    class="w-full h-full object-cover object-top select-none"
                     loading="eager"
                     width="400"
-                    height="400"
+                    height="500"
                   />
                 </div>
                 
