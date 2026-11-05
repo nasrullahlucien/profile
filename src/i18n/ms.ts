@@ -48,7 +48,7 @@ export const ms: TranslationSchema = {
     // TODO: native review
     greeting: 'Salam sejahtera, saya',
     // TODO: native review
-    name: '[YOUR NAME]',
+    name: 'Nasrullah Lucien',
     // TODO: native review
     title: 'Pendidik Sains & Pembangun EdTech',
     // TODO: native review
@@ -58,7 +58,7 @@ export const ms: TranslationSchema = {
     // TODO: native review
     downloadCv: 'Muat Turun CV',
     // TODO: native review
-    profilePhotoAlt: 'Foto profil [YOUR NAME]',
+    profilePhotoAlt: 'Foto profil Nasrullah Lucien',
   },
   about: {
     // TODO: native review
@@ -124,9 +124,9 @@ export const ms: TranslationSchema = {
     // TODO: native review
     subtitle: 'Kelayakan akademik dan pengajian lanjutan',
     // TODO: native review
-    masterDegree: 'Kini Penuntut Ijazah Sarjana dalam Pendidikan Sains',
+    masterDegree: 'Penuntut Ijazah Sarjana dalam Pendidikan Sains, Matematik, dan Komputer',
     // TODO: native review
-    masterInstitution: '[Institusi Pengajian Siswazah]',
+    masterInstitution: 'Universiti Rajabhat Yala',
     // TODO: native review
     bachelorDegree: 'Ijazah Sarjana Muda dalam Pendidikan Sains',
     // TODO: native review
@@ -216,7 +216,7 @@ export const ms: TranslationSchema = {
     // TODO: native review
     subtitle: 'Terbuka untuk perbincangan akademik, pertukaran pedagogi, atau penilaian jawatan',
     // TODO: native review
-    emailButton: 'Emel [YOUR EMAIL]',
+    emailButton: 'Emel nasrullahlucien@gmail.com',
     // TODO: native review
     socialHeading: 'Saluran Media Sosial & Platform Projek',
     // TODO: native review

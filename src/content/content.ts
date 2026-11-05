@@ -3,8 +3,8 @@ import { withBase } from '../utils/paths';
 
 export const siteContent: SiteContent = {
   author: {
-    namePlaceholder: '[YOUR NAME]',
-    emailPlaceholder: '[YOUR EMAIL]',
+    namePlaceholder: 'ครูพี่นัท นัสรูลเลาะห์ ลูเซียน',
+    emailPlaceholder: 'nasrullahlucien@gmail.com',
     profilePhotoPath: withBase('images/image-profile.png'),
     cvPath: withBase('files/cv.pdf'),
   },
@@ -37,28 +37,28 @@ export const siteContent: SiteContent = {
   teachingExperience: [
     {
       id: 'bacho-witthaya',
-      dateRange: '[START]–[END]',
+      dateRange: '2566 – ปัจจุบัน',
       schoolKey: 'exp.school.bacho',
       roleKey: 'exp.role.teacher',
       subjectsKey: 'exp.subjects.bacho',
     },
     {
       id: 'khamphee-witthaya',
-      dateRange: '[START]–[END]',
+      dateRange: '2565 – 2566',
       schoolKey: 'exp.school.khamphee',
       roleKey: 'exp.role.teacher',
       subjectsKey: 'exp.subjects.khamphee',
     },
     {
       id: 'thesaban-4',
-      dateRange: '[START]–[END]',
+      dateRange: '2564 – 2565',
       schoolKey: 'exp.school.thesaban4',
       roleKey: 'exp.role.teacher',
       subjectsKey: 'exp.subjects.thesaban4',
     },
     {
       id: 'private-tutor',
-      dateRange: '[START]–[END]',
+      dateRange: '2562 – ปัจจุบัน',
       schoolKey: 'exp.school.privateTutor',
       roleKey: 'exp.role.tutor',
       subjectsKey: 'exp.subjects.privateTutor',
@@ -90,13 +90,13 @@ export const siteContent: SiteContent = {
   education: [
     {
       id: 'edu-master',
-      period: '[YEAR]',
+      period: '2569 – ปัจจุบัน',
       degreeKey: 'edu.master.degree',
       institutionKey: 'edu.master.institution',
     },
     {
       id: 'edu-bachelor',
-      period: '[YEAR]',
+      period: 'เกียรตินิยมอันดับ 1',
       degreeKey: 'edu.bachelor.degree',
       institutionKey: 'edu.bachelor.institution',
       honorsKey: 'edu.bachelor.honors',

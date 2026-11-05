@@ -26,7 +26,7 @@ export function renderHeroSection(): string {
               </p>
               
               <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none">
-                <span class="block text-slate-900">${siteContent.author.namePlaceholder}</span>
+                <span class="block text-slate-900">${t.hero.name}</span>
                 <span class="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-800">
                   ${t.hero.title}
                 </span>
@@ -106,7 +106,7 @@ export function renderHeroSection(): string {
                 <div class="mt-4 px-2 pb-1 flex items-center justify-between text-xs text-slate-600">
                   <span class="flex items-center gap-1.5 font-medium text-slate-800">
                     <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                    ${siteContent.author.namePlaceholder}
+                    ${t.hero.name}
                   </span>
                   <span class="bg-slate-100 text-slate-700 px-2 py-0.5 rounded text-[11px] font-mono font-medium">
                     Science &amp; EdTech

@@ -26,12 +26,12 @@ export const en: TranslationSchema = {
   },
   hero: {
     greeting: "Hello, I'm",
-    name: '[YOUR NAME]',
+    name: 'Nasrullah Lucien',
     title: 'Science Educator & EdTech Developer',
     summary: 'Secondary science teacher specializing in Physics, Earth & Space Science, and Science Projects, actively developing interactive teaching media and virtual lab tools to enhance conceptual understanding.',
     exploreLabs: 'Explore Interactive Labs',
     downloadCv: 'Download CV',
-    profilePhotoAlt: 'Profile photograph of [YOUR NAME]',
+    profilePhotoAlt: 'Profile photograph of Nasrullah Lucien',
   },
   about: {
     title: 'About Me',
@@ -71,8 +71,8 @@ export const en: TranslationSchema = {
   education: {
     title: 'Education',
     subtitle: 'Academic credentials and ongoing advanced studies',
-    masterDegree: "Currently a Master's Student in Science Teaching",
-    masterInstitution: '[Graduate Institution]',
+    masterDegree: "Currently a Master's Student in Science, Mathematics, and Computer Teaching",
+    masterInstitution: 'Yala Rajabhat University',
     bachelorDegree: "Bachelor's Degree in Science Teaching",
     bachelorInstitution: 'Fatoni University',
     bachelorHonors: 'First-Class Honors',
@@ -122,7 +122,7 @@ export const en: TranslationSchema = {
   contact: {
     title: 'Contact',
     subtitle: 'Open for academic evaluations, pedagogical exchanges, and collaborative initiatives',
-    emailButton: 'Email [YOUR EMAIL]',
+    emailButton: 'Email nasrullahlucien@gmail.com',
     socialHeading: 'Professional Profiles & Social Media',
     directEmailLabel: 'Official Contact Email',
   },

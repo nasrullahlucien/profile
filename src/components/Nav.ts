@@ -1,5 +1,4 @@
 import { getTranslations } from '../i18n';
-import { siteContent } from '../content/content';
 import { renderLanguageSwitcher, bindLanguageSwitcherEvents } from './LanguageSwitcher';
 
 export interface NavItem {
@@ -38,7 +37,7 @@ export function renderNav(): string {
             </span>
             <div class="flex flex-col">
               <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-teal-800 transition-colors">
-                ${siteContent.author.namePlaceholder}
+                ${t.hero.name}
               </span>
               <span class="text-[11px] font-medium text-slate-600 hidden sm:inline-block leading-tight">
                 Science Educator &amp; EdTech

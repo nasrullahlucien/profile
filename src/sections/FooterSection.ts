@@ -1,5 +1,4 @@
 import { getTranslations } from '../i18n';
-import { siteContent } from '../content/content';
 
 export function renderFooterSection(): string {
   const t = getTranslations();
@@ -12,7 +11,7 @@ export function renderFooterSection(): string {
           
           <div class="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
             <span class="font-bold text-slate-900">
-              ${siteContent.author.namePlaceholder}
+              ${t.hero.name}
             </span>
             <span class="hidden sm:inline text-slate-300">•</span>
             <span>

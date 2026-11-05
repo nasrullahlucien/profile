@@ -1,6 +1,5 @@
 import './styles/main.css';
 import { getTranslations, onLanguageChange } from './i18n';
-import { siteContent } from './content/content';
 import { renderNav, initNavEvents, labModal } from './components';
 import {
   renderHeroSection,
@@ -30,7 +29,7 @@ function renderApp() {
   }
 
   // Reactive document title
-  document.title = `${siteContent.author.namePlaceholder} | ${t.hero.title}`;
+  document.title = `${t.hero.name} | ${t.hero.title}`;
 
   // Cleanup existing nav listener instances before re-render
   if (cleanupNavEvents) {
