@@ -15,8 +15,11 @@ export function renderHeroSection(): string {
           <div class="order-2 lg:order-1 lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             
             <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-xs font-mono font-semibold text-teal-800 tracking-wide">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>SCIENCE EDUCATOR &bull; EDTECH INNOVATION</span>
+              </span>
               ${renderTag({ text: 'Physics &amp; Earth Science', variant: 'accent', size: 'sm' })}
-              ${renderTag({ text: 'Virtual Lab Creator', variant: 'default', size: 'sm' })}
               ${renderTag({ text: 'First-Class Honors', variant: 'outline', size: 'sm' })}
             </div>
 
@@ -118,6 +121,98 @@ export function renderHeroSection(): string {
           </div>
 
         </div>
+
+        <!-- Hero Fast Facts (4 Columns) -->
+        <div class="mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-slate-200/80">
+          <div class="flex items-center justify-between gap-4 mb-5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-teal-600"></span>
+              <span class="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500">
+                FAST FACTS &bull; สรุปข้อมูลสำคัญ
+              </span>
+            </div>
+            <span class="text-xs font-mono text-teal-800 font-medium hidden sm:inline">
+              NASRULLAH LUCIEN &bull; PROFILE
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Card 1: Role -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs hover:border-teal-500/60 hover:shadow-md transition-all duration-200 group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-mono font-semibold uppercase tracking-wider text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
+                    ${t.hero.fastFacts.role.label}
+                  </span>
+                  <span class="text-xl group-hover:scale-110 transition-transform select-none" aria-hidden="true">🔬</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
+                  ${t.hero.fastFacts.role.value}
+                </h3>
+              </div>
+              <p class="mt-2 text-xs font-body text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5">
+                ${t.hero.fastFacts.role.sub}
+              </p>
+            </div>
+
+            <!-- Card 2: Studies -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs hover:border-teal-500/60 hover:shadow-md transition-all duration-200 group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-mono font-semibold uppercase tracking-wider text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
+                    ${t.hero.fastFacts.education.label}
+                  </span>
+                  <span class="text-xl group-hover:scale-110 transition-transform select-none" aria-hidden="true">🎓</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
+                  ${t.hero.fastFacts.education.value}
+                </h3>
+              </div>
+              <p class="mt-2 text-xs font-body text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5">
+                ${t.hero.fastFacts.education.sub}
+              </p>
+            </div>
+
+            <!-- Card 3: Honors -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs hover:border-teal-500/60 hover:shadow-md transition-all duration-200 group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-mono font-semibold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/60">
+                    ${t.hero.fastFacts.honors.label}
+                  </span>
+                  <span class="text-xl group-hover:scale-110 transition-transform select-none" aria-hidden="true">🏆</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
+                  ${t.hero.fastFacts.honors.value}
+                </h3>
+              </div>
+              <p class="mt-2 text-xs font-body text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5">
+                ${t.hero.fastFacts.honors.sub}
+              </p>
+            </div>
+
+            <!-- Card 4: Focus -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-4 sm:p-5 shadow-xs hover:border-teal-500/60 hover:shadow-md transition-all duration-200 group flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-mono font-semibold uppercase tracking-wider text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
+                    ${t.hero.fastFacts.focus.label}
+                  </span>
+                  <span class="text-xl group-hover:scale-110 transition-transform select-none" aria-hidden="true">🚀</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
+                  ${t.hero.fastFacts.focus.value}
+                </h3>
+              </div>
+              <p class="mt-2 text-xs font-body text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5">
+                ${t.hero.fastFacts.focus.sub}
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   `.trim();

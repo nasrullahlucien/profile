@@ -33,6 +33,28 @@ export const th: TranslationSchema = {
     exploreLabs: 'สำรวจห้องทดลองเสมือนจริง (Labs)',
     downloadCv: 'ดาวน์โหลดประวัติย่อ (CV)',
     profilePhotoAlt: 'ภาพถ่ายโปรไฟล์ของ ครูพี่นัท (Nasrullah Lucien)',
+    fastFacts: {
+      role: {
+        label: 'ROLE / ตำแหน่ง',
+        value: 'ครูวิทยาศาสตร์ & ฟิสิกส์',
+        sub: 'รร.อิสลามบาเจาะวิทยา (2566–ปัจจุบัน)',
+      },
+      education: {
+        label: 'STUDIES / การศึกษา',
+        value: 'ปริญญาโท การสอนวิทย์ฯ',
+        sub: 'ม.ราชภัฏยะลา (กำลังศึกษา)',
+      },
+      honors: {
+        label: 'HONORS / เกียรติประวัติ',
+        value: 'เกียรตินิยมอันดับ 1',
+        sub: 'สาขาวิชาการสอนวิทย์ ม.ฟาฏอนี',
+      },
+      focus: {
+        label: 'CORE FOCUS / ความเชี่ยวชาญ',
+        value: 'Virtual Labs & Simulations',
+        sub: 'ฟิสิกส์ • ดาราศาสตร์ • โค้ดดิ้งหุ่นยนต์',
+      },
+    },
   },
   about: {
     title: 'เกี่ยวกับผู้จัดทำ',

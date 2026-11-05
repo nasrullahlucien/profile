@@ -61,6 +61,28 @@ export const ms: TranslationSchema = {
     downloadCv: 'Muat Turun CV',
     // TODO: native review
     profilePhotoAlt: 'Foto profil Nasrullah Lucien',
+    fastFacts: {
+      role: {
+        label: 'PERANAN & PENGAJARAN',
+        value: 'Pendidik Sains & Fizik',
+        sub: 'Sekolah Islam Bacho (2023–Kini)',
+      },
+      education: {
+        label: 'PENGAJIAN SISWAZAH',
+        value: 'Sarjana Pendidikan Sains',
+        sub: 'Universiti Yala Rajabhat (Dalam Pengajian)',
+      },
+      honors: {
+        label: 'PENCAPAIAN AKADEMIK',
+        value: 'Kepujian Kelas Pertama',
+        sub: 'Pendidikan Sains, Universiti Fatoni',
+      },
+      focus: {
+        label: 'FOKUS UTAMA & EDTECH',
+        value: 'Makmal Maya & Simulasi',
+        sub: 'Fizik • Astronomi • Robotik & Pengekodan',
+      },
+    },
   },
   about: {
     // TODO: native review
