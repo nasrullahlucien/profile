@@ -25,6 +25,7 @@ export interface EducationItem {
   degreeKey: string;
   institutionKey: string;
   honorsKey?: string;
+  logoPath?: string;
 }
 
 export interface SkillCategory {

@@ -93,6 +93,7 @@ export const siteContent: SiteContent = {
       period: '2569 – ปัจจุบัน',
       degreeKey: 'edu.master.degree',
       institutionKey: 'edu.master.institution',
+      logoPath: withBase('images/logo-yru.png'),
     },
     {
       id: 'edu-bachelor',
@@ -100,6 +101,7 @@ export const siteContent: SiteContent = {
       degreeKey: 'edu.bachelor.degree',
       institutionKey: 'edu.bachelor.institution',
       honorsKey: 'edu.bachelor.honors',
+      logoPath: withBase('images/logo-ftu.png'),
     },
   ],
   skillCategories: [

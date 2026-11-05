@@ -6,6 +6,9 @@ import { icons } from '../utils/icons';
 export function renderEducationSection(): string {
   const t = getTranslations();
 
+  const masterEdu = siteContent.education[0];
+  const bachelorEdu = siteContent.education[1];
+
   return `
     <section id="education" data-reveal class="py-12 sm:py-16 border-t border-slate-200/80" aria-labelledby="education-title">
       <div class="max-w-7xl mx-auto space-y-10">
@@ -28,20 +31,31 @@ export function renderEducationSection(): string {
               <div class="space-y-4">
                 <div class="flex items-center justify-between gap-2">
                   <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-teal-100 text-teal-800 border border-teal-200">
-                    ${siteContent.education[0]?.period || '[YEAR]'} • Current
+                    ${masterEdu?.period || '[YEAR]'} • Current
                   </span>
                   ${renderTag({ text: 'In Progress', variant: 'accent', size: 'sm' })}
                 </div>
 
-                <div class="flex items-start gap-3.5">
-                  <div class="p-2.5 rounded-xl bg-teal-50 border border-teal-200/80 shrink-0" aria-hidden="true">
-                    ${icons.academicCap}
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">
+                <div class="flex items-start gap-4">
+                  ${
+                    masterEdu?.logoPath
+                      ? `<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white border border-slate-200/90 p-2 flex items-center justify-center shrink-0 shadow-2xs">
+                          <img 
+                            src="${masterEdu.logoPath}" 
+                            alt="${t.education.masterInstitution}" 
+                            class="w-full h-full object-contain select-none"
+                            loading="lazy"
+                            width="64"
+                            height="64"
+                          />
+                        </div>`
+                      : `<div class="p-2.5 rounded-xl bg-teal-50 border border-teal-200/80 shrink-0" aria-hidden="true">${icons.academicCap}</div>`
+                  }
+                  <div class="space-y-1 min-w-0">
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug">
                       ${t.education.masterDegree}
                     </h3>
-                    <p class="mt-1 text-base text-teal-800 font-medium">
+                    <p class="text-base text-teal-800 font-semibold">
                       ${t.education.masterInstitution}
                     </p>
                   </div>
@@ -63,23 +77,34 @@ export function renderEducationSection(): string {
               <div class="space-y-4">
                 <div class="flex items-center justify-between gap-2">
                   <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
-                    ${siteContent.education[1]?.period || '[YEAR]'}
+                    ${bachelorEdu?.period || '[YEAR]'}
                   </span>
                   ${renderTag({ text: 'Honors Degree', variant: 'primary', size: 'sm' })}
                 </div>
 
-                <div class="flex items-start gap-3.5">
-                  <div class="p-2.5 rounded-xl bg-slate-100 border border-slate-200 shrink-0" aria-hidden="true">
-                    ${icons.academicCap}
-                  </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">
+                <div class="flex items-start gap-4">
+                  ${
+                    bachelorEdu?.logoPath
+                      ? `<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white border border-slate-200/90 p-2 flex items-center justify-center shrink-0 shadow-2xs">
+                          <img 
+                            src="${bachelorEdu.logoPath}" 
+                            alt="${t.education.bachelorInstitution}" 
+                            class="w-full h-full object-contain select-none"
+                            loading="lazy"
+                            width="64"
+                            height="64"
+                          />
+                        </div>`
+                      : `<div class="p-2.5 rounded-xl bg-slate-100 border border-slate-200 shrink-0" aria-hidden="true">${icons.academicCap}</div>`
+                  }
+                  <div class="space-y-1 min-w-0">
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug">
                       ${t.education.bachelorDegree}
                     </h3>
-                    <p class="mt-1 text-base text-slate-800 font-medium">
+                    <p class="text-base text-slate-800 font-semibold">
                       ${t.education.bachelorInstitution}
                     </p>
-                    <p class="mt-1.5 inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
+                    <p class="mt-1 inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
                       ★ ${t.education.bachelorHonors}
                     </p>
                   </div>
