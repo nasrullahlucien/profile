@@ -50,7 +50,7 @@ export function renderAcademicSection(): string {
                       
                       <div class="space-y-1">
                         <div class="flex items-center gap-2">
-                          <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                          <span class="text-xs font-semibold font-heading px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
                             ${item.year}
                           </span>
                           ${renderTag({
@@ -59,10 +59,10 @@ export function renderAcademicSection(): string {
                             size: 'sm',
                           })}
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-snug">
+                        <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
                           ${title}
                         </h3>
-                        <p class="text-sm text-slate-600 font-medium">
+                        <p class="text-sm font-body text-slate-600 font-medium leading-relaxed">
                           ${org}
                         </p>
                       </div>

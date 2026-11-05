@@ -53,12 +53,12 @@ export function renderSkillsSection(): string {
                       <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200/80 flex items-center justify-center text-xl shrink-0" aria-hidden="true">
                         ${icon}
                       </div>
-                      <h3 class="text-xl font-bold text-slate-900 tracking-tight">
+                      <h3 class="text-xl font-bold font-heading text-slate-900 leading-snug">
                         ${title}
                       </h3>
                     </div>
 
-                    <p class="text-sm text-slate-600 leading-relaxed font-normal min-h-[40px]">
+                    <p class="text-sm font-body text-slate-600 leading-[1.75] font-normal min-h-[40px]">
                       ${desc}
                     </p>
 

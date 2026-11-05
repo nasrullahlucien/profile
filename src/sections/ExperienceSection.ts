@@ -50,7 +50,7 @@ export function renderExperienceSection(): string {
           <div class="lg:col-span-7 space-y-6">
             <div class="flex items-center gap-2 pb-2 border-b border-slate-200">
               <span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
-              <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+              <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-snug">
                 ${t.experience.teachingHeading}
               </h3>
             </div>
@@ -75,7 +75,7 @@ export function renderExperienceSection(): string {
           <div class="lg:col-span-5 space-y-6">
             <div class="flex items-center gap-2 pb-2 border-b border-slate-200">
               <span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span>
-              <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+              <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-snug">
                 ${t.experience.mentoringHeading}
               </h3>
             </div>
@@ -95,12 +95,12 @@ export function renderExperienceSection(): string {
                           ✓
                         </div>
                         <div class="space-y-1">
-                          <h4 class="text-base font-semibold text-slate-900 leading-snug">
+                          <h4 class="text-base font-semibold font-heading text-slate-900 leading-snug">
                             ${title}
                           </h4>
                           ${
                             org
-                              ? `<p class="text-xs text-teal-800 font-medium">${org}</p>`
+                              ? `<p class="text-xs font-body text-teal-800 font-medium">${org}</p>`
                               : ''
                           }
                           <div class="pt-1">

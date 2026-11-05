@@ -27,24 +27,24 @@ export function renderTimelineItem(props: TimelineItemProps): string {
       </div>
 
       <div class="bg-white rounded-xl border border-slate-200/80 p-5 sm:p-6 shadow-xs hover:border-slate-300 transition-colors">
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold font-heading bg-slate-100 text-slate-700 border border-slate-200">
             ${date}
           </span>
           ${
             subtitle
-              ? `<span class="text-xs sm:text-sm font-medium text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-200/60">${subtitle}</span>`
+              ? `<span class="text-xs sm:text-sm font-medium font-heading text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded-md border border-teal-200/60">${subtitle}</span>`
               : ''
           }
         </div>
 
-        <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+        <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-[1.38]">
           ${title}
         </h3>
 
         ${
           description
-            ? `<p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+            ? `<p class="mt-2.5 text-sm sm:text-base text-slate-600 font-body leading-[1.78] font-normal">
                 ${description}
               </p>`
             : ''
@@ -56,7 +56,7 @@ export function renderTimelineItem(props: TimelineItemProps): string {
                 ${tags
                   .map(
                     (tag) =>
-                      `<span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-50 text-slate-600 border border-slate-200">${tag}</span>`
+                      `<span class="px-2 py-0.5 rounded text-xs font-medium font-body bg-slate-50 text-slate-600 border border-slate-200">${tag}</span>`
                   )
                   .join('')}
               </div>`

@@ -32,15 +32,15 @@ export function renderContactSection(): string {
                   </div>
 
                   <div>
-                    <span class="text-xs font-semibold text-teal-800 uppercase tracking-wider">
+                    <span class="text-xs font-semibold font-heading text-teal-800 uppercase tracking-wider">
                       ${t.contact.directEmailLabel}
                     </span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mt-1">
+                    <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 leading-snug mt-1">
                       ${siteContent.author.emailPlaceholder}
                     </h3>
                   </div>
 
-                  <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                  <p class="text-sm sm:text-base font-body text-slate-600 leading-[1.8] font-normal">
                     ${t.contact.subtitle}
                   </p>
                 </div>
@@ -66,7 +66,7 @@ export function renderContactSection(): string {
               className: 'h-full flex flex-col justify-between',
               content: `
                 <div class="space-y-4">
-                  <h3 class="text-lg font-bold text-slate-900 tracking-tight">
+                  <h3 class="text-lg font-bold font-heading text-slate-900 leading-snug">
                     ${t.contact.socialHeading}
                   </h3>
 
@@ -84,7 +84,7 @@ export function renderContactSection(): string {
                             <span class="text-slate-600 group-hover:text-teal-800 transition-colors" aria-hidden="true">
                               ${icons[soc.platform] || ''}
                             </span>
-                            <span class="text-sm font-semibold text-slate-800 group-hover:text-teal-900">
+                            <span class="text-sm font-semibold font-heading text-slate-800 group-hover:text-teal-900">
                               ${t.social[soc.platform]}
                             </span>
                           </div>
@@ -98,7 +98,7 @@ export function renderContactSection(): string {
                   </div>
                 </div>
 
-                <p class="text-xs text-slate-600 font-medium pt-4 border-t border-slate-100">
+                <p class="text-xs font-body text-slate-600 font-medium pt-4 border-t border-slate-100">
                   External professional links verified.
                 </p>
               `,

@@ -53,10 +53,10 @@ export function renderProjectsSection(): string {
 
                     <!-- Lab Title & Description -->
                     <div>
-                      <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug">
+                      <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-snug">
                         ${title}
                       </h3>
-                      <p class="mt-2 text-sm text-slate-600 leading-relaxed font-normal">
+                      <p class="mt-2 text-sm font-body text-slate-600 leading-[1.78] font-normal">
                         ${desc}
                       </p>
                     </div>
@@ -74,7 +74,7 @@ export function renderProjectsSection(): string {
                   <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
                     <button 
                       type="button" 
-                      class="lab-launch-btn inline-flex items-center justify-center font-semibold text-sm px-4 py-2 rounded-xl bg-teal-700 text-white hover:bg-teal-800 transition-colors shadow-2xs gap-1.5 focus-visible:ring-2 focus-visible:ring-teal-700 cursor-pointer"
+                      class="lab-launch-btn inline-flex items-center justify-center font-heading font-semibold text-sm px-4 py-2 rounded-xl bg-teal-700 text-white hover:bg-teal-800 transition-colors shadow-2xs gap-1.5 focus-visible:ring-2 focus-visible:ring-teal-700 cursor-pointer"
                       data-lab-url="${proj.labUrl}"
                       data-lab-title="${title}"
                     >
@@ -88,7 +88,7 @@ export function renderProjectsSection(): string {
                             href="${proj.githubUrl}" 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 p-2 rounded-lg hover:bg-slate-100 transition-colors focus-visible:ring-2 focus-visible:ring-slate-400"
+                            class="inline-flex items-center gap-1.5 text-xs font-heading font-medium text-slate-600 hover:text-slate-900 p-2 rounded-lg hover:bg-slate-100 transition-colors focus-visible:ring-2 focus-visible:ring-slate-400"
                             title="${t.projects.viewGithub}"
                           >
                             <span class="shrink-0" aria-hidden="true">${icons.github}</span>

@@ -30,7 +30,7 @@ export function renderEducationSection(): string {
             content: `
               <div class="space-y-4">
                 <div class="flex items-center justify-between gap-2">
-                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-teal-100 text-teal-800 border border-teal-200">
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold font-heading bg-teal-100 text-teal-800 border border-teal-200">
                     ${masterEdu?.period || '[YEAR]'} • Current
                   </span>
                   ${renderTag({ text: 'In Progress', variant: 'accent', size: 'sm' })}
@@ -51,17 +51,17 @@ export function renderEducationSection(): string {
                         </div>`
                       : `<div class="p-2.5 rounded-xl bg-teal-50 border border-teal-200/80 shrink-0" aria-hidden="true">${icons.academicCap}</div>`
                   }
-                  <div class="space-y-1 min-w-0">
-                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug">
+                  <div class="space-y-1.5 min-w-0">
+                    <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-[1.38]">
                       ${t.education.masterDegree}
                     </h3>
-                    <p class="text-base text-teal-800 font-semibold">
+                    <p class="text-base font-heading text-teal-800 font-semibold leading-normal">
                       ${t.education.masterInstitution}
                     </p>
                   </div>
                 </div>
 
-                <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                <p class="text-sm font-body text-slate-600 leading-[1.78] border-t border-slate-100 pt-3">
                   Continuing advanced pedagogical studies and modern didactic methodologies in science education.
                 </p>
               </div>
@@ -76,7 +76,7 @@ export function renderEducationSection(): string {
             content: `
               <div class="space-y-4">
                 <div class="flex items-center justify-between gap-2">
-                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold font-heading bg-slate-100 text-slate-700 border border-slate-200">
                     ${bachelorEdu?.period || '[YEAR]'}
                   </span>
                   ${renderTag({ text: 'Honors Degree', variant: 'primary', size: 'sm' })}
@@ -97,20 +97,20 @@ export function renderEducationSection(): string {
                         </div>`
                       : `<div class="p-2.5 rounded-xl bg-slate-100 border border-slate-200 shrink-0" aria-hidden="true">${icons.academicCap}</div>`
                   }
-                  <div class="space-y-1 min-w-0">
-                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug">
+                  <div class="space-y-1.5 min-w-0">
+                    <h3 class="text-lg sm:text-xl font-bold font-heading text-slate-900 leading-[1.38]">
                       ${t.education.bachelorDegree}
                     </h3>
-                    <p class="text-base text-slate-800 font-semibold">
+                    <p class="text-base font-heading text-slate-800 font-semibold leading-normal">
                       ${t.education.bachelorInstitution}
                     </p>
-                    <p class="mt-1 inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
+                    <p class="mt-1 inline-flex items-center gap-1.5 text-xs font-bold font-heading text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60">
                       ★ ${t.education.bachelorHonors}
                     </p>
                   </div>
                 </div>
 
-                <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                <p class="text-sm font-body text-slate-600 leading-[1.78] border-t border-slate-100 pt-3">
                   Graduated with First-Class Honors in Science Teaching, establishing a strong foundation in physics, space science, and pedagogic design.
                 </p>
               </div>

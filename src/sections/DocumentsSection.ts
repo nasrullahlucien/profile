@@ -44,7 +44,7 @@ export function renderDocumentsSection(): string {
 
                     <div class="space-y-2 flex-1">
                       <div class="flex items-center gap-2">
-                        <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-900 text-white tracking-wider">
+                        <span class="text-xs font-bold font-heading px-2 py-0.5 rounded bg-slate-900 text-white tracking-wider">
                           ${doc.fileType}
                         </span>
                         <span class="text-xs font-mono font-medium text-slate-600">
@@ -52,11 +52,11 @@ export function renderDocumentsSection(): string {
                         </span>
                       </div>
 
-                      <h3 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-snug">
+                      <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
                         ${title}
                       </h3>
 
-                      <p class="text-sm text-slate-600 leading-relaxed font-normal">
+                      <p class="text-sm font-body text-slate-600 leading-[1.78] font-normal">
                         ${desc}
                       </p>
 

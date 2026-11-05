@@ -24,12 +24,12 @@ export function renderSectionHeading(props: SectionHeadingProps): string {
             </span>`
           : ''
       }
-      <h2 ${idAttr} class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+      <h2 ${idAttr} class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading leading-[1.36] tracking-normal">
         ${title}
       </h2>
       ${
         subtitle
-          ? `<p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          ? `<p class="mt-3 text-base sm:text-lg text-slate-600 font-body leading-[1.8] font-normal">
               ${subtitle}
             </p>`
           : ''

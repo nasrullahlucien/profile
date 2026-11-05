@@ -21,19 +21,19 @@ export function renderHeroSection(): string {
             </div>
 
             <div class="space-y-3">
-              <p class="text-base sm:text-lg font-medium text-teal-800 tracking-wide">
+              <p class="text-base sm:text-lg font-heading font-semibold text-teal-800 tracking-normal leading-relaxed">
                 ${t.hero.greeting}
               </p>
               
-              <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none">
-                <span class="block text-slate-900">${t.hero.name}</span>
-                <span class="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-800">
+              <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading leading-[1.32] sm:leading-[1.35] tracking-normal">
+                <span class="block text-slate-900 tracking-tight">${t.hero.name}</span>
+                <span class="block mt-2.5 text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-800 leading-[1.38]">
                   ${t.hero.title}
                 </span>
               </h1>
             </div>
 
-            <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal">
+            <p class="text-base sm:text-lg text-slate-600 font-body max-w-2xl leading-[1.8] font-normal">
               ${t.hero.summary}
             </p>
 

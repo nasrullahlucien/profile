@@ -17,11 +17,11 @@ export function renderAboutSection(): string {
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           <!-- Narrative column (7 cols) -->
-          <div class="lg:col-span-7 space-y-5 text-slate-700 leading-relaxed text-base sm:text-lg font-normal">
-            <p class="p-6 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+          <div class="lg:col-span-7 space-y-5 text-slate-700 font-body leading-[1.85] text-base sm:text-lg font-normal">
+            <p class="p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
               ${t.about.p1}
             </p>
-            <p class="p-6 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+            <p class="p-6 sm:p-7 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
               ${t.about.p2}
             </p>
           </div>
@@ -36,8 +36,8 @@ export function renderAboutSection(): string {
                     🔭
                   </div>
                   <div class="space-y-1.5">
-                    <h3 class="font-bold text-slate-900 text-base sm:text-lg">Science Teaching Core</h3>
-                    <p class="text-sm text-slate-600 leading-normal">
+                    <h3 class="font-bold font-heading text-slate-900 text-base sm:text-lg leading-snug">Science Teaching Core</h3>
+                    <p class="text-sm font-body text-slate-600 leading-[1.7]">
                       Focus on deep conceptual reasoning in Physics, Earth &amp; Space Science, and inquiry-based science projects.
                     </p>
                     <div class="pt-2 flex flex-wrap gap-1.5">
@@ -58,8 +58,8 @@ export function renderAboutSection(): string {
                     ⚡
                   </div>
                   <div class="space-y-1.5">
-                    <h3 class="font-bold text-slate-900 text-base sm:text-lg">EdTech &amp; Interactive Media</h3>
-                    <p class="text-sm text-slate-600 leading-normal">
+                    <h3 class="font-bold font-heading text-slate-900 text-base sm:text-lg leading-snug">EdTech &amp; Interactive Media</h3>
+                    <p class="text-sm font-body text-slate-600 leading-[1.7]">
                       Crafting browser-based simulations and virtual laboratories to make abstract scientific concepts intuitive.
                     </p>
                     <div class="pt-2 flex flex-wrap gap-1.5">
@@ -80,8 +80,8 @@ export function renderAboutSection(): string {
                     🤝
                   </div>
                   <div class="space-y-1.5">
-                    <h3 class="font-bold text-slate-900 text-base sm:text-lg">Student Leadership &amp; Innovation</h3>
-                    <p class="text-sm text-slate-600 leading-normal">
+                    <h3 class="font-bold font-heading text-slate-900 text-base sm:text-lg leading-snug">Student Leadership &amp; Innovation</h3>
+                    <p class="text-sm font-body text-slate-600 leading-[1.7]">
                       Mentoring robotics &amp; coding teams, science competitions, fighting robots, and student council activities.
                     </p>
                   </div>

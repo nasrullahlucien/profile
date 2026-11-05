@@ -20,7 +20,7 @@ export function getButtonClasses(
   customClass: string = ''
 ): string {
   const base =
-    'inline-flex items-center justify-center font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 rounded-xl text-center cursor-pointer select-none';
+    'inline-flex items-center justify-center font-heading font-medium tracking-normal leading-normal transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 rounded-xl text-center cursor-pointer select-none';
 
   const sizeClasses = {
     sm: 'px-3.5 py-1.5 text-sm gap-1.5',

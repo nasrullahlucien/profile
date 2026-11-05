@@ -36,10 +36,10 @@ export function renderNav(): string {
               SE
             </span>
             <div class="flex flex-col">
-              <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-teal-800 transition-colors">
+              <span class="text-sm sm:text-base font-bold font-heading text-slate-900 group-hover:text-teal-800 transition-colors">
                 ${t.nav.brandName}
               </span>
-              <span class="text-[11px] font-medium text-slate-600 hidden sm:inline-block leading-tight">
+              <span class="text-[11px] font-medium font-body text-slate-600 hidden sm:inline-block leading-tight">
                 Science Educator &amp; EdTech
               </span>
             </div>
@@ -52,7 +52,7 @@ export function renderNav(): string {
                 (item) => `
                 <a 
                   href="${item.href}" 
-                  class="nav-link px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/80 rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-teal-700"
+                  class="nav-link font-heading px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/80 rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-teal-700"
                   data-section="${item.id}"
                 >
                   ${item.label}
@@ -100,7 +100,7 @@ export function renderNav(): string {
               (item) => `
               <a 
                 href="${item.href}" 
-                class="mobile-nav-link px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+                class="mobile-nav-link font-heading px-3 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors"
                 data-section="${item.id}"
               >
                 ${item.label}
