@@ -36,27 +36,39 @@ export function renderHeroSection(): string {
               </h1>
             </div>
 
-            <!-- Hero Readout Specs (Clean line-by-line format) -->
-            <div class="space-y-2.5 sm:space-y-3 py-1 font-body text-base text-slate-700 leading-relaxed max-w-2xl">
-              <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                <span class="font-mono text-xs sm:text-sm font-bold tracking-wider text-teal-800 shrink-0 sm:w-28">${t.hero.fastFacts.role.label}</span>
-                <span class="text-slate-800 font-semibold text-base sm:text-lg">${t.hero.fastFacts.role.value}</span>
+            <!-- Hero Readout Specs (Clean compact inline format matching reference) -->
+            <div class="space-y-1.5 sm:space-y-2 py-1 text-[13px] sm:text-[14px] leading-relaxed max-w-2xl font-body">
+              <div class="flex items-baseline gap-2.5">
+                <span class="font-mono text-xs sm:text-[13px] font-bold tracking-wider text-teal-800 shrink-0 select-none">
+                  ${t.hero.fastFacts.role.label}
+                </span>
+                <span class="text-slate-800 font-medium">
+                  ${t.hero.fastFacts.role.value}
+                </span>
               </div>
-              <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                <span class="font-mono text-xs sm:text-sm font-bold tracking-wider text-teal-800 shrink-0 sm:w-28">${t.hero.fastFacts.org.label}</span>
-                <span class="text-slate-700">${t.hero.fastFacts.org.value}</span>
+              <div class="flex items-baseline gap-2.5">
+                <span class="font-mono text-xs sm:text-[13px] font-bold tracking-wider text-teal-800 shrink-0 select-none">
+                  ${t.hero.fastFacts.org.label}
+                </span>
+                <span class="text-slate-700">
+                  ${t.hero.fastFacts.org.value}
+                </span>
               </div>
-              <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                <span class="font-mono text-xs sm:text-sm font-bold tracking-wider text-teal-800 shrink-0 sm:w-28">${t.hero.fastFacts.education.label}</span>
-                <span class="text-slate-700">${t.hero.fastFacts.education.value}</span>
+              <div class="flex items-baseline gap-2.5">
+                <span class="font-mono text-xs sm:text-[13px] font-bold tracking-wider text-teal-800 shrink-0 select-none">
+                  ${t.hero.fastFacts.experience.label}
+                </span>
+                <span class="text-slate-700">
+                  ${t.hero.fastFacts.experience.value}
+                </span>
               </div>
-              <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                <span class="font-mono text-xs sm:text-sm font-bold tracking-wider text-teal-800 shrink-0 sm:w-28">${t.hero.fastFacts.honors.label}</span>
-                <span class="text-slate-700">${t.hero.fastFacts.honors.value}</span>
-              </div>
-              <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                <span class="font-mono text-xs sm:text-sm font-bold tracking-wider text-teal-800 shrink-0 sm:w-28">${t.hero.fastFacts.focus.label}</span>
-                <span class="text-slate-600 font-mono text-xs sm:text-sm">${t.hero.fastFacts.focus.value}</span>
+              <div class="flex items-baseline gap-2.5">
+                <span class="font-mono text-xs sm:text-[13px] font-bold tracking-wider text-teal-800 shrink-0 select-none">
+                  ${t.hero.fastFacts.focus.label}
+                </span>
+                <span class="font-mono text-xs sm:text-[13px] text-slate-600">
+                  ${t.hero.fastFacts.focus.value}
+                </span>
               </div>
             </div>
 

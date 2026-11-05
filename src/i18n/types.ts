@@ -36,8 +36,7 @@ export interface TranslationSchema {
     fastFacts: {
       role: { label: string; value: string };
       org: { label: string; value: string };
-      education: { label: string; value: string };
-      honors: { label: string; value: string };
+      experience: { label: string; value: string };
       focus: { label: string; value: string };
     };
   };

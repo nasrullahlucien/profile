@@ -40,15 +40,11 @@ export const en: TranslationSchema = {
       },
       org: {
         label: 'ORG',
-        value: 'Islamic Bacho Witthaya School (2023 – Present)',
+        value: 'Islamic Bacho Witthaya School',
       },
-      education: {
-        label: 'STUDIES',
-        value: 'M.Ed. in Science, Math & Computer Teaching, Yala Rajabhat University',
-      },
-      honors: {
-        label: 'HONORS',
-        value: 'First-Class Honors in Science Teaching, Fatoni University',
+      experience: {
+        label: 'EXPERIENCE',
+        value: '4 Institutions / Teaching Experience (2019 – Present)',
       },
       focus: {
         label: 'FOCUS',

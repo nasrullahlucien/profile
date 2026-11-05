@@ -68,15 +68,11 @@ export const ms: TranslationSchema = {
       },
       org: {
         label: 'ORG',
-        value: 'Sekolah Islam Bacho (2023 – Kini)',
+        value: 'Sekolah Islam Bacho',
       },
-      education: {
-        label: 'STUDIES',
-        value: 'Sarjana Pengajaran Sains, Matematik & Komputer, Universiti Yala Rajabhat',
-      },
-      honors: {
-        label: 'HONORS',
-        value: 'Kepujian Kelas Pertama dalam Pendidikan Sains, Universiti Fatoni',
+      experience: {
+        label: 'EXPERIENCE',
+        value: '4 Institusi / Pengalaman Mengajar (2019 – Kini)',
       },
       focus: {
         label: 'FOCUS',

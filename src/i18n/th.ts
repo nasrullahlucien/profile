@@ -40,15 +40,11 @@ export const th: TranslationSchema = {
       },
       org: {
         label: 'ORG',
-        value: 'โรงเรียนอิสลามบาเจาะวิทยา (2566 – ปัจจุบัน)',
+        value: 'โรงเรียนอิสลามบาเจาะวิทยา',
       },
-      education: {
-        label: 'STUDIES',
-        value: 'ปริญญาโท การสอนวิทยาศาสตร์ คณิตศาสตร์ และคอมพิวเตอร์ มหาวิทยาลัยราชภัฏยะลา',
-      },
-      honors: {
-        label: 'HONORS',
-        value: 'เกียรตินิยมอันดับ 1 สาขาวิชาการสอนวิทยาศาสตร์ มหาวิทยาลัยฟาฏอนี',
+      experience: {
+        label: 'EXPERIENCE',
+        value: '4 สถานศึกษา / ประสบการณ์สอน (2562 – ปัจจุบัน)',
       },
       focus: {
         label: 'FOCUS',
