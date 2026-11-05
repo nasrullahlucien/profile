@@ -11,8 +11,8 @@ export function renderHeroSection(): string {
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          <!-- Text Content (Column 1-7) -->
-          <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
+          <!-- Text Content (Column 1-7 on desktop, Order 2 on mobile) -->
+          <div class="order-2 lg:order-1 lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             
             <div class="flex flex-wrap items-center gap-2">
               ${renderTag({ text: 'Physics &amp; Earth Science', variant: 'accent', size: 'sm' })}
@@ -84,9 +84,9 @@ export function renderHeroSection(): string {
 
           </div>
 
-          <!-- Profile Photo Placeholder (Column 8-12) -->
-          <div class="lg:col-span-5 flex justify-center lg:justify-end">
-            <div class="relative w-full max-w-sm sm:max-w-md">
+          <!-- Profile Photo Card (Column 8-12 on desktop, Order 1 on mobile) -->
+          <div class="order-1 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md">
               
               <!-- Subtle decorative backdrop halo -->
               <div class="absolute -inset-2 bg-gradient-to-tr from-teal-500/20 via-slate-200/40 to-teal-100/30 rounded-3xl blur-xl" aria-hidden="true"></div>
