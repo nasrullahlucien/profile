@@ -1,0 +1,124 @@
+import { getTranslations } from '../i18n';
+import { siteContent } from '../content/content';
+import { renderButton, renderTag } from '../components';
+import { icons } from '../utils/icons';
+
+export function renderHeroSection(): string {
+  const t = getTranslations();
+
+  return `
+    <section id="hero" data-reveal class="relative pt-6 sm:pt-12 pb-16 sm:pb-24 overflow-hidden" aria-labelledby="hero-title">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- Text Content (Column 1-7) -->
+          <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
+            
+            <div class="flex flex-wrap items-center gap-2">
+              ${renderTag({ text: 'Physics &amp; Earth Science', variant: 'accent', size: 'sm' })}
+              ${renderTag({ text: 'Virtual Lab Creator', variant: 'default', size: 'sm' })}
+              ${renderTag({ text: 'First-Class Honors', variant: 'outline', size: 'sm' })}
+            </div>
+
+            <div class="space-y-3">
+              <p class="text-base sm:text-lg font-medium text-teal-800 tracking-wide">
+                ${t.hero.greeting}
+              </p>
+              
+              <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none">
+                <span class="block text-slate-900">${siteContent.author.namePlaceholder}</span>
+                <span class="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-teal-800">
+                  ${t.hero.title}
+                </span>
+              </h1>
+            </div>
+
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal">
+              ${t.hero.summary}
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
+              ${renderButton({
+                href: '#projects',
+                text: t.hero.exploreLabs,
+                variant: 'accent',
+                size: 'lg',
+                icon: icons.play,
+                className: 'shadow-sm hover:shadow-md',
+              })}
+              ${renderButton({
+                href: siteContent.author.cvPath,
+                text: t.hero.downloadCv,
+                variant: 'outline',
+                size: 'lg',
+                download: true,
+                icon: icons.download,
+              })}
+            </div>
+
+            <!-- Social Links quick row -->
+            <div class="pt-4 border-t border-slate-200/80 flex items-center gap-3">
+              <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">
+                Connect:
+              </span>
+              <div class="flex items-center gap-1.5">
+                ${siteContent.socials
+                  .map(
+                    (soc) => `
+                    <a 
+                      href="${soc.url}" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="p-2 text-slate-500 hover:text-teal-800 hover:bg-teal-50 rounded-lg transition-colors focus-visible:ring-2 focus-visible:ring-teal-700" 
+                      aria-label="${soc.platform}"
+                      title="${soc.platform}"
+                    >
+                      ${icons[soc.platform] || ''}
+                    </a>
+                  `
+                  )
+                  .join('')}
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Profile Photo Placeholder (Column 8-12) -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-sm sm:max-w-md">
+              
+              <!-- Subtle decorative backdrop halo -->
+              <div class="absolute -inset-2 bg-gradient-to-tr from-teal-500/20 via-slate-200/40 to-teal-100/30 rounded-3xl blur-xl" aria-hidden="true"></div>
+
+              <div class="relative bg-white rounded-3xl p-3 sm:p-4 border border-slate-200/90 shadow-lg">
+                <div class="aspect-square w-full rounded-2xl overflow-hidden bg-slate-50 flex items-center justify-center border border-slate-100">
+                  <img 
+                    src="${siteContent.author.profilePhotoPath}" 
+                    alt="${t.hero.profilePhotoAlt}" 
+                    class="w-full h-full object-cover select-none"
+                    loading="eager"
+                    width="400"
+                    height="400"
+                  />
+                </div>
+                
+                <div class="mt-4 px-2 pb-1 flex items-center justify-between text-xs text-slate-600">
+                  <span class="flex items-center gap-1.5 font-medium text-slate-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                    ${siteContent.author.namePlaceholder}
+                  </span>
+                  <span class="bg-slate-100 text-slate-700 px-2 py-0.5 rounded text-[11px] font-mono font-medium">
+                    Science &amp; EdTech
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  `.trim();
+}

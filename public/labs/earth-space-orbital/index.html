@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth & Orbital Mechanics Lab - [PLACEHOLDER]</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #ccfbf1;
+      color: #0f766e;
+      margin-bottom: 1rem;
+    }
+    canvas {
+      background: #020617;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+      width: 100%;
+      max-width: 480px;
+      height: 220px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">[VIRTUAL LAB PLACEHOLDER]</span>
+    <h2>Earth & Space: Orbital Mechanics</h2>
+    <p>Planetary Orbits and Gravitational Simulation</p>
+    <canvas id="orbitCanvas" width="480" height="220"></canvas>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('orbitCanvas');
+    const ctx = canvas.getContext('2d');
+    let angle = 0;
+
+    function render() {
+      ctx.fillStyle = '#020617';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+
+      // Sun
+      ctx.beginPath();
+      ctx.arc(cx, cy, 18, 0, Math.PI * 2);
+      ctx.fillStyle = '#f59e0b';
+      ctx.fill();
+
+      // Orbit path
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, 140, 75, 0, 0, Math.PI * 2);
+      ctx.strokeStyle = '#334155';
+      ctx.setLineDash([4, 4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Earth
+      const earthX = cx + Math.cos(angle) * 140;
+      const earthY = cy + Math.sin(angle) * 75;
+      ctx.beginPath();
+      ctx.arc(earthX, earthY, 8, 0, Math.PI * 2);
+      ctx.fillStyle = '#38bdf8';
+      ctx.fill();
+
+      angle += 0.02;
+      requestAnimationFrame(render);
+    }
+    render();
+  </script>
+</body>
+</html>

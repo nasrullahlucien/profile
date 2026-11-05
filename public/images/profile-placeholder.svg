@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)" />
+  <circle cx="200" cy="155" r="70" fill="url(#avatarGrad)" opacity="0.9" />
+  <path d="M85 340 C85 250, 140 235, 200 235 C260 235, 315 250, 315 340 Z" fill="url(#avatarGrad)" opacity="0.9" />
+  <rect x="90" y="310" width="220" height="34" rx="17" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <text x="200" y="332" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#0f766e" text-anchor="middle">
+    [PROFILE PHOTO]
+  </text>
+</svg>

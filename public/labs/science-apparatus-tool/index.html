@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Science Apparatus - [PLACEHOLDER]</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #ccfbf1;
+      color: #0f766e;
+      margin-bottom: 1rem;
+    }
+    .meter-container {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: #f1f5f9;
+      border-radius: 0.5rem;
+    }
+    input[type=range] {
+      width: 80%;
+      accent-color: #0f766e;
+    }
+    .reading {
+      font-size: 2rem;
+      font-family: monospace;
+      font-weight: bold;
+      color: #0f766e;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">[VIRTUAL LAB PLACEHOLDER]</span>
+    <h2>Virtual Vernier & Measurement Apparatus</h2>
+    <p>Practice reading digital and vernier scale instruments</p>
+    <div class="meter-container">
+      <div class="reading" id="displayVal">25.40 mm</div>
+      <label for="slider" style="display:block; margin-bottom: 0.5rem; font-size: 0.9rem; color: #475569;">Adjust scale slider:</label>
+      <input type="range" id="slider" min="0" max="100" value="25.4" step="0.1" />
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    const display = document.getElementById('displayVal');
+    slider.addEventListener('input', (e) => {
+      display.textContent = parseFloat(e.target.value).toFixed(2) + ' mm';
+    });
+  </script>
+</body>
+</html>

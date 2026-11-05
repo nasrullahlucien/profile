@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Motion Simulation Lab - [PLACEHOLDER]</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #ccfbf1;
+      color: #0f766e;
+      margin-bottom: 1rem;
+    }
+    canvas {
+      background: #0f172a;
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+      width: 100%;
+      max-width: 480px;
+      height: 200px;
+      display: block;
+    }
+    button {
+      background: #0f766e;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.25rem;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #115e59;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">[VIRTUAL LAB PLACEHOLDER]</span>
+    <h2>Physics Motion Simulation</h2>
+    <p>Interactive 2D Kinematics and Projectile Motion Lab</p>
+    <canvas id="simCanvas" width="480" height="200"></canvas>
+    <div>
+      <button id="toggleBtn" type="button">Pause / Play Animation</button>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('simCanvas');
+    const ctx = canvas.getContext('2d');
+    let x = 20, y = 160, vx = 2.5, vy = -5, g = 0.15;
+    let running = true;
+
+    function render() {
+      if (running) {
+        ctx.fillStyle = '#0f172a';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Ground line
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(0, 180);
+        ctx.lineTo(canvas.width, 180);
+        ctx.stroke();
+
+        // Ball
+        ctx.beginPath();
+        ctx.arc(x, y, 12, 0, Math.PI * 2);
+        ctx.fillStyle = '#14b8a6';
+        ctx.fill();
+
+        // Trajectory step
+        x += vx;
+        y += vy;
+        vy += g;
+
+        if (y >= 168) {
+          y = 168;
+          vy = -vy * 0.75;
+        }
+        if (x >= canvas.width - 20) {
+          x = 20;
+          y = 160;
+          vy = -5;
+        }
+      }
+      requestAnimationFrame(render);
+    }
+    render();
+
+    document.getElementById('toggleBtn').addEventListener('click', () => {
+      running = !running;
+    });
+  </script>
+</body>
+</html>
