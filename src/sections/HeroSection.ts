@@ -72,21 +72,13 @@ export function renderHeroSection(): string {
               </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
-              ${renderButton({
-                href: '#projects',
-                text: t.hero.exploreLabs,
-                variant: 'accent',
-                size: 'lg',
-                icon: icons.play,
-                className: 'shadow-sm hover:shadow-md',
-              })}
+            <!-- Action Button -->
+            <div class="flex items-center gap-3 pt-2">
               ${renderButton({
                 href: siteContent.author.cvPath,
                 text: t.hero.downloadCv,
-                variant: 'outline',
-                size: 'lg',
+                variant: 'accent',
+                size: 'md',
                 download: true,
                 icon: icons.download,
               })}
