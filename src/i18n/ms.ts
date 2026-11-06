@@ -178,25 +178,31 @@ export const ms: TranslationSchema = {
   },
   projects: {
     // TODO: native review
-    title: 'Makmal Maya & Projek Pilihan',
+    title: 'Media Inovasi & Makmal Maya',
     // TODO: native review
-    subtitle: 'Simulasi interaktif berasaskan pelayar untuk pemahaman konsep saintifik',
+    subtitle: 'Koleksi simulasi interaktif berasaskan pelayar, permainan pendidikan dan aplikasi e-pembelajaran',
     // TODO: native review
-    playLab: 'Buka Makmal',
+    playLab: 'Buka Media',
     // TODO: native review
-    viewGithub: 'Sumber Kod',
+    viewGithub: 'GitHub',
     // TODO: native review
-    item1Title: '[PROJECT TITLE: Simulasi Pergerakan Fizik]',
-    // TODO: native review
-    item1Desc: '[PROJECT DESCRIPTION: Simulasi interaktif kinematik, vektor halaju dan graf parameter secara masa nyata.]',
-    // TODO: native review
-    item2Title: '[PROJECT TITLE: Makmal Mekanik Orbit Bumi & Angkasa]',
-    // TODO: native review
-    item2Desc: '[PROJECT DESCRIPTION: Visualisasi 2D/3D mekanik cakerawala dan dinamik orbit untuk subjek Sains Bumi & Angkasa.]',
-    // TODO: native review
-    item3Title: '[PROJECT TITLE: Radas Pengukuran Sains Maya]',
-    // TODO: native review
-    item3Desc: '[PROJECT DESCRIPTION: Alat pengukuran saintifik maya untuk latihan kemahiran membaca skala dan penentukuran radas.]',
+    openNewTab: 'Buka Tab Baharu',
+    itemArM1Title: 'SCIENCE MISSION V3 (Projek Sains Tingkatan 1)',
+    itemArM1Desc: 'Media pembelajaran interaktif dan permainan misi simulasi kaedah saintifik untuk pelajar Tingkatan 1.',
+    itemGame4Title: 'ASTRO EXPLORER: Misi Bumi & Angkasa (Tingkatan 4)',
+    itemGame4Desc: 'Permainan interaktif mengulang kaji konsep Sains Bumi dan Angkasa Tingkatan 4 dalam format penerokaan cakerawala.',
+    itemGame5Title: 'GEO-SPHERE EX: Penjaga Keseimbangan Bumi (Tingkatan 5)',
+    itemGame5Desc: 'Permainan simulasi geosfera, atmosfera, dan iklim untuk memupuk kemahiran analisis dan membuat keputusan.',
+    itemGame6Title: 'ASTRO DEEP SPACE: Penerokaan Kosmos & Bintang (Tingkatan 6)',
+    itemGame6Desc: 'Permainan penerokaan angkasa lepas meliputi galaksi, evolusi bintang, dan kosmologi untuk Tingkatan 6.',
+    itemAstroM5Title: 'Pelajaran Dalam Talian: Peredaran Udara Bumi (Tingkatan 5)',
+    itemAstroM5Desc: 'Pelajaran digital interaktif dan model dinamik atmosfera yang menggambarkan sistem angin global dan meteorologi.',
+    itemAstroM6Title: 'Pelajaran Dalam Talian: Bintang & Evolusi Cakerawala (Tingkatan 6)',
+    itemAstroM6Desc: 'Pelajaran interaktif menerangkan kelahiran, sifat fizikal, kecerahan, dan kitaran hidup bintang.',
+    itemSci2Title: 'Work and Power Virtual Lab (Kerja & Kuasa)',
+    itemSci2Desc: 'Makmal fizik maya mensimulasikan kerja mekanikal, kuasa, vektor daya dan pengiraan masa nyata.',
+    itemEngTitle: 'ENGLISH TEP Master - Aplikasi Persediaan Peperiksaan',
+    itemEngDesc: 'Aplikasi web interaktif dengan bank soalan dan analitik prestasi untuk persediaan ujian bahasa Inggeris.',
   },
   academic: {
     // TODO: native review

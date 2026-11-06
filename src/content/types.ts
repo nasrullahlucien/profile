@@ -41,6 +41,8 @@ export interface ProjectLabItem {
   labUrl: string;
   githubUrl?: string;
   tags: string[];
+  category?: 'game' | 'lesson' | 'lab' | 'app';
+  level?: string;
   titleKey: string;
   descriptionKey: string;
 }
