@@ -24,7 +24,7 @@ export function renderAcademicSection(): string {
         
         ${renderSectionHeading({
           id: 'academic-title',
-          badge: 'PUBLICATIONS & TRAINING',
+          badge: t.academic.badge,
           title: t.academic.title,
           subtitle: t.academic.subtitle,
         })}

@@ -11,12 +11,10 @@ export function getNavItems(): NavItem[] {
   const t = getTranslations();
   return [
     { id: 'about', label: t.nav.about, href: '#about' },
-    { id: 'experience', label: t.nav.experience, href: '#experience' },
     { id: 'education', label: t.nav.education, href: '#education' },
-    { id: 'skills', label: t.nav.skills, href: '#skills' },
+    { id: 'experience', label: t.nav.experience, href: '#experience' },
     { id: 'projects', label: t.nav.projects, href: '#projects' },
     { id: 'academic', label: t.nav.academic, href: '#academic' },
-    { id: 'documents', label: t.nav.documents, href: '#documents' },
     { id: 'contact', label: t.nav.contact, href: '#contact' },
   ];
 }

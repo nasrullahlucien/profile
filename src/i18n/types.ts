@@ -41,12 +41,24 @@ export interface TranslationSchema {
     };
   };
   about: {
+    badge: string;
     title: string;
     subtitle: string;
     p1: string;
     p2: string;
   };
+  education: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    masterDegree: string;
+    masterInstitution: string;
+    bachelorDegree: string;
+    bachelorInstitution: string;
+    bachelorHonors: string;
+  };
   experience: {
+    badge: string;
     title: string;
     subtitle: string;
     teachingHeading: string;
@@ -75,15 +87,6 @@ export interface TranslationSchema {
       studentCouncil: string;
     };
   };
-  education: {
-    title: string;
-    subtitle: string;
-    masterDegree: string;
-    masterInstitution: string;
-    bachelorDegree: string;
-    bachelorInstitution: string;
-    bachelorHonors: string;
-  };
   skills: {
     title: string;
     subtitle: string;
@@ -97,6 +100,7 @@ export interface TranslationSchema {
     devopsDesc: string;
   };
   projects: {
+    badge: string;
     title: string;
     subtitle: string;
     playLab: string;
@@ -120,6 +124,7 @@ export interface TranslationSchema {
     itemEngDesc: string;
   };
   academic: {
+    badge: string;
     title: string;
     subtitle: string;
     item1Title: string;
@@ -138,6 +143,7 @@ export interface TranslationSchema {
     portfolioDesc: string;
   };
   contact: {
+    badge: string;
     title: string;
     subtitle: string;
     emailButton: string;

@@ -15,7 +15,7 @@ export function renderEducationSection(): string {
         
         ${renderSectionHeading({
           id: 'education-title',
-          badge: 'EDUCATION',
+          badge: t.education.badge,
           title: t.education.title,
           subtitle: t.education.subtitle,
         })}

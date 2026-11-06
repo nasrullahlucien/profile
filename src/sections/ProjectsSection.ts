@@ -42,7 +42,7 @@ export function renderProjectsSection(): string {
         
         ${renderSectionHeading({
           id: 'projects-title',
-          badge: 'PORTFOLIO &amp; VIRTUAL LABS',
+          badge: t.projects.badge,
           title: t.projects.title,
           subtitle: t.projects.subtitle,
         })}

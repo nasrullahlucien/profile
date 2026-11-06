@@ -39,7 +39,7 @@ export function renderExperienceSection(): string {
         
         ${renderSectionHeading({
           id: 'experience-title',
-          badge: 'EXPERIENCE',
+          badge: t.experience.badge,
           title: t.experience.title,
           subtitle: t.experience.subtitle,
         })}

@@ -15,21 +15,20 @@ export function renderSectionHeading(props: SectionHeadingProps): string {
   const idAttr = id ? `id="${id}"` : '';
 
   return `
-    <div class="mb-10 sm:mb-14 max-w-3xl ${alignmentClass} ${className}">
+    <div class="mb-8 sm:mb-10 max-w-3xl ${alignmentClass} ${className}">
       ${
         badge
-          ? `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase text-teal-800 bg-teal-50 border border-teal-200/80 mb-3 ${badgeAlign}">
-              <span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
-              ${badge}
-            </span>`
+          ? `<div class="inline-flex items-center gap-2 text-xs sm:text-[13px] font-mono font-semibold tracking-wider text-teal-700 sm:text-teal-800 mb-2 ${badgeAlign}">
+              <span>${badge}</span>
+            </div>`
           : ''
       }
-      <h2 ${idAttr} class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading leading-[1.36] tracking-normal">
+      <h2 ${idAttr} class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading leading-[1.35] tracking-normal">
         ${title}
       </h2>
       ${
         subtitle
-          ? `<p class="mt-3 text-base sm:text-lg text-slate-600 font-body leading-[1.8] font-normal">
+          ? `<p class="mt-2.5 text-base sm:text-lg text-slate-600 font-body leading-[1.8] font-normal">
               ${subtitle}
             </p>`
           : ''

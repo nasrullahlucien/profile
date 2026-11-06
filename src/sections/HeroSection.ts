@@ -1,6 +1,6 @@
 import { getTranslations } from '../i18n';
 import { siteContent } from '../content/content';
-import { renderButton, renderTag } from '../components';
+import { renderButton } from '../components';
 import { icons } from '../utils/icons';
 
 export function renderHeroSection(): string {
@@ -14,13 +14,11 @@ export function renderHeroSection(): string {
           <!-- Text Content (Column 1-7 on desktop, Order 2 on mobile) -->
           <div class="order-2 lg:order-1 lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             
-            <div class="flex flex-wrap items-center gap-2">
+            <div class="flex items-center gap-2">
               <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-xs font-mono font-semibold text-teal-800 tracking-wide">
-                <span class="pulse-dot" aria-hidden="true"></span>
-                <span>SCIENCE EDUCATOR &bull; EDTECH INNOVATION</span>
+                <span class="w-2 h-2 rounded-full bg-teal-600 animate-pulse" aria-hidden="true"></span>
+                <span>NL &bull; SCIENCE EDUCATOR &bull; EDTECH</span>
               </span>
-              ${renderTag({ text: 'Physics &amp; Earth Science', variant: 'accent', size: 'sm' })}
-              ${renderTag({ text: 'First-Class Honors', variant: 'outline', size: 'sm' })}
             </div>
 
             <div class="space-y-3">

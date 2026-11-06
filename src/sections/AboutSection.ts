@@ -9,7 +9,7 @@ export function renderAboutSection(): string {
       <div class="max-w-7xl mx-auto">
         ${renderSectionHeading({
           id: 'about-title',
-          badge: 'ABOUT',
+          badge: t.about.badge,
           title: t.about.title,
           subtitle: t.about.subtitle,
         })}

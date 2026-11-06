@@ -82,7 +82,9 @@ export const ms: TranslationSchema = {
   },
   about: {
     // TODO: native review
-    title: 'Tentang Saya',
+    badge: '01 · PROFIL PERIBADI',
+    // TODO: native review
+    title: 'Profil Peribadi',
     // TODO: native review
     subtitle: 'Latar belakang perguruan dan inovasi teknologi pendidikan',
     // TODO: native review
@@ -90,9 +92,29 @@ export const ms: TranslationSchema = {
     // TODO: native review
     p2: 'Selain tugas bilik darjah, berkhidmat aktif sebagai penasihat projek sains, pembimbing kelab robotik & pengekodan, jurulatih kuiz sains, penyelia pasukan robot lawan buluh (Electronics Fighter), dan penasihat Majlis Pelajar di Sekolah Islam Bacho Witthaya. Mengintegrasikan kepakaran pedagogi dengan teknologi web terkini untuk menghasilkan alat simulasi digital berimpak tinggi.',
   },
+  education: {
+    // TODO: native review
+    badge: '02 · PENDIDIKAN',
+    // TODO: native review
+    title: 'Pendidikan',
+    // TODO: native review
+    subtitle: 'Kelayakan akademik dan pengajian lanjutan',
+    // TODO: native review
+    masterDegree: 'Penuntut Ijazah Sarjana dalam Pendidikan Sains, Matematik, dan Komputer',
+    // TODO: native review
+    masterInstitution: 'Universiti Rajabhat Yala',
+    // TODO: native review
+    bachelorDegree: 'Ijazah Sarjana Muda dalam Pendidikan Sains',
+    // TODO: native review
+    bachelorInstitution: 'Universiti Fatoni',
+    // TODO: native review
+    bachelorHonors: 'Kepujian Kelas Pertama (First-Class Honors)',
+  },
   experience: {
     // TODO: native review
-    title: 'Pengalaman',
+    badge: '03 · PENGALAMAN MENGAJAR',
+    // TODO: native review
+    title: 'Pengalaman Mengajar',
     // TODO: native review
     subtitle: 'Rekod pengajaran di sekolah dan bimbingan kepimpinan pelajar',
     // TODO: native review
@@ -138,22 +160,6 @@ export const ms: TranslationSchema = {
       studentCouncil: 'Penasihat Majlis Pelajar Sekolah Islam Bacho Witthaya',
     },
   },
-  education: {
-    // TODO: native review
-    title: 'Pendidikan',
-    // TODO: native review
-    subtitle: 'Kelayakan akademik dan pengajian lanjutan',
-    // TODO: native review
-    masterDegree: 'Penuntut Ijazah Sarjana dalam Pendidikan Sains, Matematik, dan Komputer',
-    // TODO: native review
-    masterInstitution: 'Universiti Rajabhat Yala',
-    // TODO: native review
-    bachelorDegree: 'Ijazah Sarjana Muda dalam Pendidikan Sains',
-    // TODO: native review
-    bachelorInstitution: 'Universiti Fatoni',
-    // TODO: native review
-    bachelorHonors: 'Kepujian Kelas Pertama (First-Class Honors)',
-  },
   skills: {
     // TODO: native review
     title: 'Kemahiran & Kepakaran',
@@ -177,6 +183,8 @@ export const ms: TranslationSchema = {
     devopsDesc: 'Pengurusan kod menggunakan Git/GitHub dengan saluran integrasi berterusan GitHub Actions',
   },
   projects: {
+    // TODO: native review
+    badge: '04 · INOVASI & MAKMAL MAYA',
     // TODO: native review
     title: 'Media Inovasi & Makmal Maya',
     // TODO: native review
@@ -205,6 +213,8 @@ export const ms: TranslationSchema = {
     itemEngDesc: 'Aplikasi web interaktif dengan bank soalan dan analitik prestasi untuk persediaan ujian bahasa Inggeris.',
   },
   academic: {
+    // TODO: native review
+    badge: '05 · AKADEMIK & LATIHAN',
     // TODO: native review
     title: 'Karya Akademik & Latihan',
     // TODO: native review
@@ -237,6 +247,8 @@ export const ms: TranslationSchema = {
     portfolioDesc: 'Dokumentasi inovasi pengajaran, pencapaian pelajar, dan bahan edtech',
   },
   contact: {
+    // TODO: native review
+    badge: '06 · HUBUNGI',
     // TODO: native review
     title: 'Hubungi',
     // TODO: native review

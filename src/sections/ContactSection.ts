@@ -12,7 +12,7 @@ export function renderContactSection(): string {
         
         ${renderSectionHeading({
           id: 'contact-title',
-          badge: 'GET IN TOUCH',
+          badge: t.contact.badge,
           title: t.contact.title,
           subtitle: t.contact.subtitle,
         })}
