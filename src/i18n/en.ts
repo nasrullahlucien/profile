@@ -53,7 +53,7 @@ export const en: TranslationSchema = {
     },
   },
   about: {
-    badge: '01 · PERSONAL PROFILE',
+    badge: '01 · IDENTITY',
     title: 'Personal Profile',
     subtitle: 'Background, teaching philosophy, and educational innovation',
     p1: 'A dedicated science educator experienced in delivering rigorous instruction in Physics, Earth & Space Science, and Science Projects. Teaching background spans Islamic Bacho Witthaya School, Khamphee Witthaya School, and Thesaban 4 (Thanawithi) School, alongside private tutoring in Science and Mathematics.',
@@ -61,7 +61,7 @@ export const en: TranslationSchema = {
   },
   education: {
     badge: '02 · EDUCATION',
-    title: 'Education',
+    title: 'Academic Background',
     subtitle: 'Academic credentials and ongoing advanced studies',
     masterDegree: "Currently a Master's Student in Science, Mathematics, and Computer Teaching",
     masterInstitution: 'Yala Rajabhat University',
@@ -70,7 +70,7 @@ export const en: TranslationSchema = {
     bachelorHonors: 'First-Class Honors',
   },
   experience: {
-    badge: '03 · TEACHING EXPERIENCE',
+    badge: '03 · EXPERIENCE',
     title: 'Teaching Experience',
     subtitle: 'Classroom teaching appointments and student leadership mentorship',
     teachingHeading: 'Teaching Positions',
@@ -112,8 +112,8 @@ export const en: TranslationSchema = {
     devopsDesc: 'Managing code repositories via Git/GitHub with automated CI/CD deployments through GitHub Actions',
   },
   projects: {
-    badge: '04 · INNOVATION & LABS',
-    title: 'Innovation & Virtual Labs',
+    badge: '04 · INNOVATION',
+    title: 'Virtual Labs & Media',
     subtitle: 'Suite of browser-based simulations, educational games, and e-learning applications actively deployed',
     playLab: 'Launch Media',
     viewGithub: 'GitHub',
@@ -136,8 +136,8 @@ export const en: TranslationSchema = {
     itemEngDesc: 'Full-featured web application offering interactive question banks and real-time analytics for standardized English proficiency preparation.',
   },
   academic: {
-    badge: '05 · ACADEMIC & TRAINING',
-    title: 'Academic & Training',
+    badge: '05 · ACADEMIC',
+    title: 'Academic Works & Training',
     subtitle: 'Classroom research, publications, and professional development',
     item1Title: '[ACADEMIC WORK TITLE: Action Research in Science Education]',
     item1Org: '[ORGANIZATION: School or Academic Board]',
@@ -155,8 +155,8 @@ export const en: TranslationSchema = {
     portfolioDesc: 'Selected teaching artifacts, student achievements, and edtech documentation',
   },
   contact: {
-    badge: '06 · CONTACT',
-    title: 'Contact',
+    badge: '06 · CONNECT',
+    title: 'Contact Information',
     subtitle: 'Open for academic evaluations, pedagogical exchanges, and collaborative initiatives',
     emailButton: 'Email nasrullahlucien@gmail.com',
     socialHeading: 'Professional Profiles & Social Media',

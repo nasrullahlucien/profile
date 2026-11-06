@@ -82,7 +82,7 @@ export const ms: TranslationSchema = {
   },
   about: {
     // TODO: native review
-    badge: '01 · PROFIL PERIBADI',
+    badge: '01 · IDENTITI',
     // TODO: native review
     title: 'Profil Peribadi',
     // TODO: native review
@@ -96,7 +96,7 @@ export const ms: TranslationSchema = {
     // TODO: native review
     badge: '02 · PENDIDIKAN',
     // TODO: native review
-    title: 'Pendidikan',
+    title: 'Latar Belakang Pendidikan',
     // TODO: native review
     subtitle: 'Kelayakan akademik dan pengajian lanjutan',
     // TODO: native review
@@ -112,7 +112,7 @@ export const ms: TranslationSchema = {
   },
   experience: {
     // TODO: native review
-    badge: '03 · PENGALAMAN MENGAJAR',
+    badge: '03 · PENGALAMAN',
     // TODO: native review
     title: 'Pengalaman Mengajar',
     // TODO: native review
@@ -184,7 +184,7 @@ export const ms: TranslationSchema = {
   },
   projects: {
     // TODO: native review
-    badge: '04 · INOVASI & MAKMAL MAYA',
+    badge: '04 · INOVASI',
     // TODO: native review
     title: 'Media Inovasi & Makmal Maya',
     // TODO: native review
@@ -214,7 +214,7 @@ export const ms: TranslationSchema = {
   },
   academic: {
     // TODO: native review
-    badge: '05 · AKADEMIK & LATIHAN',
+    badge: '05 · AKADEMIK',
     // TODO: native review
     title: 'Karya Akademik & Latihan',
     // TODO: native review
@@ -250,7 +250,7 @@ export const ms: TranslationSchema = {
     // TODO: native review
     badge: '06 · HUBUNGI',
     // TODO: native review
-    title: 'Hubungi',
+    title: 'Maklumat Perhubungan',
     // TODO: native review
     subtitle: 'Terbuka untuk perbincangan akademik, pertukaran pedagogi, atau penilaian jawatan',
     // TODO: native review
